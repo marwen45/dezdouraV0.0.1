@@ -22,7 +22,7 @@ if ($email == "" || $password == "")
 	                    $msg = "Please verify your email!";
                     else {
 	                    $msg = "You have been logged in";
-						header('location:menu.html');
+						header('location:menu.php');
                     }
                 } else
 	                $msg = "Please check your inputs!";
