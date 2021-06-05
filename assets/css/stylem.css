@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+	font-size: 14px;
+	background-image: url(/assets/img/background.jpg);
+	background-size: cover;
+}
+
+.wrapper .header{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+  
+}
+
+.wrapper .header .top,
+.wrapper .signup{
+	background-color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    padding: 40px 40px 20px;
+}
+
+.wrapper .header .logo img{
+	padding: auto ;
+	margin: 10px ;
+}
+
+
+.wrapper .header .form .input_field .input{
+	width: 100%;
+	background: rgba(255,255,255,0.5);
+	border: 1px solid rgba(255,255,255,0.5);
+	font-size: 12px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.wrapper .header .form .btn{
+	margin: 10px 0;
+	background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+
+.wrapper .header .form .btn a{
+	color: #fff;
+	display: block;
+}
+
+
+
+
+.wrapper .header .or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.wrapper .header .or .line{
+	width: 105px;
+	height: 2px;
+	background: rgba(255,255,255,0.5)
+}
+
+.wrapper .header .or p{
+	color: rgba(255,255,255,0.5);
+	font-size: 12px;
+}
+
+.wrapper .fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper .dif .fb img{
+	width: 25px;
+	height: 50px;
+}
+
+.wrapper .forgot{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.wrapper .dif .forgot a{
+	color: #1900ff;
+}
+
+.wrapper .signup {
+	margin: 10px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #ff0000;
+}
+
+.wrapper .signup  a{
+	color: blue;
+}
+
+.copyright{
+	color: #999;
+	text-align: center;	
+}
+
+
