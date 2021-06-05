@@ -16,14 +16,15 @@ if (isset($_POST['submit'])){
         $email=$_POST['email'];
         $password=$_POST['password'];
         $cPassword=$_POST['cPassword'];  
+
         if ($name ==''||$email==''||$password!=$cPassword)
-        $msg="please check your input";
+                $msg="Please fill up your inputs!";
         else {
                 $sql="SELECT id FROM users where email='$email'";
                 $result = $conn->query($sql);
 
                 if ($result->num_rows > 0){
-                        $msg="email exist";
+                        $msg="Email already exists in the database!";
                 }
                 else{
                 $token = 'qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM0123456789!$/()*';
@@ -81,10 +82,11 @@ if (isset($_POST['submit'])){
 			<div class="logo">
 				<img src="./assets/img/dezdoura.png" alt="" style="width: 230px;">
 			</div>
-
-                        
+                        <div>
+                        <?php echo $msg . "<br><br>" ?>
+                        </div>
                                 <form id="click"  method="post" action="register.php">
-                              
+                                
                                         <div class="form">
                                                 <div class="input_field">
                                                         <input name="name" type="text" placeholder="Name" class="input"><br></br>

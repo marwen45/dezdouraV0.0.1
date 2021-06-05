@@ -9,7 +9,9 @@
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 }
-
+.button_active {
+	background-color: #3897f0;
+}
 body{
 
 	font-size: 14px;
@@ -48,18 +50,20 @@ body{
 	padding: 10px;
 }
 
-.wrapper .header .form .btn{
+.wrapper .header .form .button_active{
 	margin: 10px 0;
 	background-color: #3897f0;
     border: 1px solid #3897f0;
     border-radius: 4px;
-    text-align: center;
-    padding: 5px;
+	padding: 11px 120px;
+    text-align: left;
+
 }
 
 .wrapper .header .form .btn a{
-	color: #fff;
+	color: rgb(255, 0, 0);
 	display: block;
+	text-align: center;
 }
 
 
@@ -119,5 +123,4 @@ body{
 	color: #999;
 	text-align: center;	
 }
-
 
