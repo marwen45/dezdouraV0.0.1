@@ -31,13 +31,11 @@
               <li><a href="hotel.html">SEARCH</a></li>
               <li><a href="user.php">EDIT PROFILE</a></li>
               <li><a href="logout.php">LOGOUT</a></li>
-              <li><a href="#">CONTACTS</a></li>
-          </ul>  
+              <li><a href="index.html">CONTACTS</a></li>
         </nav>
-
     </div>
     <div id="menubtn">
-        <img src="menu.png" id="menu">
+        <img src="assets/img/menu.png" id="menu">
     </div>
     <script>
         var menubtn = document.getElementById("menubtn")
