@@ -38,6 +38,9 @@ if (isset($_POST['submit'])){
 
                 //send email verification
                 $mail = new PHPMailer();
+
+try {
+
                         //Server settings
                         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
                         $mail->isSMTP();                                            //Send using SMTP
@@ -56,14 +59,19 @@ if (isset($_POST['submit'])){
                         $mail->Body    = "
                         Please click on the link below:<br><br>
                         <a href='http://localhost:8000/confirm.php?email=$email&token=$token'>Click Here</a>
-                    ";                      
-                        if ($mail->send())
-                        $msg = "You have been registered! Please verify your email!";
-                    else
-                        $msg = "Something wrong happened! Please try again!";
+                    ";     
+
+                    $mail->send();
+                    $msg = "You have been registered! Please verify your email!";
+                } catch (Exception $e) {
+                        $msg = "Something wrong happened! Please try again!: {$mail->ErrorInfo}";
+                
+                }
+                
                 }
         }
 }
+
 
 ?>
 
