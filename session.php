@@ -1,16 +1,5 @@
-<?php
-    session_start();
-    if (isset($_SESSION['nbreVisite'])) {
-        $nbreVisite = $_SESSION['nbreVisite'];
-        $nbreVisite++;
-        $_SESSION['nbreVisite'] = $nbreVisite;
-        $message = "Bienvenu fidèle visitreur c'est votre $nbreVisite visites";
-    } else {
-        $nbreVisite = 1;
-        $_SESSION['nbreVisite'] = $nbreVisite;
-        $message = "Bienvenu cher nouveau visitreur nous somme ravi de votre visite";
-    }
-?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

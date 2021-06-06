@@ -1,20 +1,15 @@
 <?php
-
+session_start();
 $msg="";
 include ('class/connectdb.php');
-
-
 if (isset($_POST['submit'])) {
-
 $email = $_POST['email'];
 $password =$_POST['password'];
-
 if ($email == "" || $password == "")
 			$msg = "Please check your inputs!";
 		else {
 			$sql = "SELECT id, password, isEmailConfirmed FROM users WHERE email='$email'";
 			$result = $conn->query($sql);
-			
 			if ($result->num_rows > 0) {
                 $data = $result->fetch_array();
                 if (password_verify($password, $data['password'])) {
@@ -31,6 +26,10 @@ if ($email == "" || $password == "")
 			}
 		}
 	}
+
+
+
+
 
 ?>
 
