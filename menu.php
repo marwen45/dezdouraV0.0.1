@@ -30,7 +30,7 @@
               <li><a href="menu.html">HOME</a></li>
               <li><a href="hotel.html">SEARCH</a></li>
               <li><a href="user.php">EDIT PROFILE</a></li>
-              <li><a href="#">LOGOUT</a></li>
+              <li><a href="logout.php">LOGOUT</a></li>
               <li><a href="#">CONTACTS</a></li>
           </ul>  
         </nav>
